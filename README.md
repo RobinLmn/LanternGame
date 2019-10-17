@@ -24,6 +24,7 @@ Animation of the character
 Find a way to implement the lantern bc it's the key feature of the game sooooo...
 
 Environment
+
 Creating the puzzles 
 
 User interface
