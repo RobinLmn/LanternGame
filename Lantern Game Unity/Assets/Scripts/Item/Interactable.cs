@@ -5,7 +5,7 @@ using TMPro;
 
 public class Interactable : MonoBehaviour
 {
-    public float radius = 3f;               // How close do we need to be to interact?
+    public float radius = 0.1f;               // How close do we need to be to interact?
     public Transform interactionTransform;  // The transform from where we interact in case you want to offset it
     public Transform player;
 
@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
     {
         float distance = Vector3.Distance(player.position, interactionTransform.position);
 
-        if ((distance <= radius) && Input.GetKeyDown(KeyCode.E))
+        if (distance <= radius)
         {
             // Interact with the object
             Interact();
