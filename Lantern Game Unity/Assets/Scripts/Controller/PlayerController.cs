@@ -10,10 +10,8 @@ public class PlayerController : MonoBehaviour
     private bool m_FacingRight = true;
     private Vector3 m_Velocity = Vector3.zero;
 
-
     void Start()
     {
-
         rb = GetComponent<Rigidbody2D>();
     }
 

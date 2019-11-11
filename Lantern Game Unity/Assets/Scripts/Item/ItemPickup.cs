@@ -3,7 +3,7 @@ using TMPro;
 
 public class ItemPickup : Interactable
 {
-
+    public AudioClip chime;
     public override void Interact()
     {
         base.Interact();
@@ -14,7 +14,7 @@ public class ItemPickup : Interactable
     {
         Debug.Log("Picking up ");
         bool wasPickedUp = true;   // Add to inventory
-
+        AudioSource.PlayClipAtPoint(chime, transform.position);
         CandyManager.instance.Use();
 
         // If successfully picked up
